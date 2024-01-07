@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h1>Form</h1>
+    <form id="info">
+        <fieldset>
+            <legend><h3>Fill This Form</h3> </legend>
+      Name<input type="text" placeholder="Name" minlength="5" required /> <br />
+      Password<input
+        type="password"
+        placeholder="Password"
+        minlength="8"
+        required
+        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+      /><br />
+      Email<input type="email" placeholder="Email" required /><br />
+
+      Mobile Number<input
+        type="text"
+        required
+        placeholder="Enter Your Cell Number"
+        inputmode="numeric"
+        maxlength="11"
+      /><br />
+    </fieldset>
+      DOB:<input type="date" placeholder="date" required /><br />
+      Are You Above 18?<input type="checkbox" /><br />
+      <input type="color" /><br />
+      Gender: Male<input type="radio" name="mygender" /> Female<input
+        type="radio"
+        name="mygender"
+      />
+      <input type="file" accept="image/*" /><br />
+      <input type="submit" /><br />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
